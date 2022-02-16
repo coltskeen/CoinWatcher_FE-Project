@@ -1,0 +1,23 @@
+form.inputs input[type=text] {
+    padding: 10px;
+    margin-top: .2%;
+    font-size: 17px;
+    border: 1px solid grey;
+    width: 15%;
+    /* height: 37px; */
+    background: #f1f1f1;
+  }
+
+  form.inputs button {
+    /* float: right; */
+    width: 5%;
+    padding: 10px;
+    margin-top: .2%;
+    margin-right: .2%;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none; /* Prevent double borders */
+    cursor: pointer;
+  }
