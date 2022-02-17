@@ -1,6 +1,6 @@
 console.log("loaded");
 
-//call the html elements
+//Reference the html elements
 let searchInput = document.querySelector('#crypto');
 let searchButton = document.getElementById("submit");
 let $displayDiv = $("#dataCard");
@@ -14,12 +14,21 @@ let $ΔTitle = $("#ΔTitle");
 let $percentChangeData = $(".editPercent");
 let $infoBtn = $("#moreInfoBtn");
 
+//Number formatters with International API
+const currencyFormatter = new Intl.NumberFormat('en-US', {
+    style: 'currency',
+    currency: 'USD',
+    minimumFractionDigits: 2
+})
 
+const ΔFormatter = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 });
+
+//Search Funtion w/ Button EventListener
 searchButton.addEventListener("click", function () {
     let inputData = searchInput.value;
 
     $.get(`https://api.coincap.io/v2/assets`, (data) => {
-        // console.log(data.data[0]);
+        console.log(data.data[0]);
         
         for (var i = 0; i < data.data.length; i++) {
             //find the data and add data to list items 
@@ -34,14 +43,16 @@ searchButton.addEventListener("click", function () {
                 //ROW 1:
                 $rankTitle.text("Rank: ");
                 $rankData.text(`${data.data[i]?.rank}`);
-
+                
                 //ROW 2:
                 $priceTitle.text("Price: ");
-                $priceData.text(`$ ${data.data[i]?.priceUsd}`);
+                let price = currencyFormatter.format(Number(data.data[i]?.priceUsd));
+                $priceData.text(`${price}`);
                 
                 //ROW 3:
                 $ΔTitle.text("24Hr (Δ): ")
-                $percentChangeData.text(`${data.data[i]?.changePercent24Hr}%`);
+                let Δ = ΔFormatter.format(Number(data.data[i]?.changePercent24Hr));
+                $percentChangeData.text(`${Δ}%`);
                 if(data.data[i]?.changePercent24Hr < 0) {
                     $percentChangeData.css({"color": "red"});
                 } else if(data.data[i]?.changePercent24Hr > 0) {

@@ -4,11 +4,16 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    /* background-color: #464646; */
+    opacity: .9;
+}
+
+.container {
+    width: 40%
 }
 
 .display-4, .lead {
     color: whitesmoke;
+    text-shadow: 0px 0px 5px darkblue, 0px 0px 5px rgb(0, 0, 0);
 }
 
 form.inputs input[type=text] {
@@ -45,7 +50,7 @@ table {
 
 td.editTitle {
     text-align: left;
-    font-style: oblique;
+    /* font-style: oblique; */
     font-weight: bold;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
