@@ -1,7 +1,7 @@
 console.log("loaded");
 
 //Reference the html elements
-let searchInput = document.querySelector('#crypto');
+let $searchInput = $('#crypto');
 let searchButton = document.getElementById("submit");
 let $displayDiv = $("#dataCard");
 let $headerDiv = $("#coinHeader");
@@ -24,8 +24,8 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
 const ΔFormatter = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 });
 
 //Search Funtion w/ Button EventListener
-searchButton.addEventListener("click", function () {
-    let inputData = searchInput.value;
+searchButton.addEventListener("click", function search() {
+    let inputData = $searchInput.val();
 
     $.get(`https://api.coincap.io/v2/assets`, (data) => {
         console.log(data.data[0]);
@@ -42,7 +42,7 @@ searchButton.addEventListener("click", function () {
                 
                 //ROW 1:
                 $rankTitle.text("Rank: ");
-                $rankData.text(`${data.data[i]?.rank}`);
+                $rankData.text(`#${data.data[i]?.rank}`);
                 
                 //ROW 2:
                 $priceTitle.text("Price: ");
@@ -60,12 +60,18 @@ searchButton.addEventListener("click", function () {
                 }
                 
                 $infoBtn.attr("href", `${data.data[i].explorer}`);
-            } else {
-                console.log("hmm...");
-            }
+            } 
         } 
     })
 })
+
+// $searchInput.on("keyup", function (e) {
+//     if (e.keyCode === 13) {
+//         // e.preventDefault();
+//         console.log("isthison?");
+//         // search();
+//     }   
+// })
     
     
     
