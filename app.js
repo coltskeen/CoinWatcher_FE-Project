@@ -1,13 +1,16 @@
 console.log("loaded");
 
-//call the input element
+//call the html elements
 let searchInput = document.querySelector('#crypto');
 let searchButton = document.getElementById("submit");
 let $displayDiv = $("#dataCard");
 let $headerDiv = $("#coinHeader");
 let $h1 = $("#iconHeader");
+let $rankTitle = $("#rankTitle");
 let $rankData = $("#rankData");
+let $priceTitle = $("#priceTitle");
 let $priceData = $(".editPrice");
+let $ΔTitle = $("#ΔTitle");
 let $percentChangeData = $(".editPercent");
 let $infoBtn = $("#moreInfoBtn");
 
@@ -29,12 +32,15 @@ searchButton.addEventListener("click", function () {
                 $h1.attr("src", `https://assets.coincap.io/assets/icons/${symbol}@2x.png`);
                 
                 //ROW 1:
+                $rankTitle.text("Rank: ");
                 $rankData.text(`${data.data[i]?.rank}`);
 
                 //ROW 2:
+                $priceTitle.text("Price: ");
                 $priceData.text(`$ ${data.data[i]?.priceUsd}`);
                 
                 //ROW 3:
+                $ΔTitle.text("24Hr (Δ): ")
                 $percentChangeData.text(`${data.data[i]?.changePercent24Hr}%`);
                 if(data.data[i]?.changePercent24Hr < 0) {
                     $percentChangeData.css({"color": "red"});
@@ -44,7 +50,7 @@ searchButton.addEventListener("click", function () {
                 
                 $infoBtn.attr("href", `${data.data[i].explorer}`);
             } else {
-                
+                console.log("hmm...");
             }
         } 
     })
