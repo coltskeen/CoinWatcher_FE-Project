@@ -17,8 +17,8 @@
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
         <h5 class="my-0 mr-md-auto font-weight-normal">CoinWatch</h5>
         <nav class="my-2 my-md-0 mr-md-3">
-          <a class="p-2 text-dark" href="#">GitHub</a>
-          <a class="btn btn-outline-primary" href="#">Support</a>
+          <a class="p-2 text-dark" href="https://github.com/coltskeen/Front-End-Project-Crypto-Marketdata">GitHub</a>
+          <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=9CJu43AvIds&t=0s">Victory Dance</a>
         </nav>
     </div>
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -36,14 +36,22 @@
                   <h4 id="coinHeader" class="my-0 font-weight-normal"></h4>
                 </div>
                 <div id="dataCard" class="card-body">
-                  <!-- <h1 class="card-title pricing-card-title">body stuff here</h1>
-                  <ul class="list-unstyled mt-3 mb-4">
-                    <li>body stuff here</li>
-                    <li>body stuff here</li>
-                    <li>body stuff here</li>
-                    <li>body stuff here</li>
-                  </ul> -->
-                  <!-- <button type="button" class="btn btn-lg btn-block btn-outline-primary">Link this to CoinCap</button>  -->
+                  <img id="iconHeader" class="card-title pricing-card-title">
+                  <table class='h6'>
+                    <tr>
+                      <td class='editTitle'>Rank: </td>
+                      <td id="rankData"></td>
+                    </tr>
+                    <tr>
+                      <td class='editTitle'>Price: </td>
+                      <td class='editPrice'></td>
+                    </tr>
+                    <tr>
+                      <td class='editTitle'>24Hr (Δ): </td>
+                      <td class='editPercent'></td>
+                    </tr>
+                  </table>
+                  <a id='moreInfoBtn'><button id='moreInfo' type='button' class='btn btn-lg btn-block btn-outline-primary'>More Info</button></a>
                 </div>
               </div>
         </div>
