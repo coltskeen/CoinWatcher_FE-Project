@@ -1,3 +1,16 @@
+body {
+    background-image: url(tether-image.jpeg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-color: #464646; */
+}
+
+.display-4, .lead {
+    color: whitesmoke;
+}
+
 form.inputs input[type=text] {
     padding: 10px;
     margin-top: .2%;
@@ -6,9 +19,9 @@ form.inputs input[type=text] {
     width: 15%;
     /* height: 37px; */
     background: #f1f1f1;
-  }
+}
 
-  form.inputs button {
+form.inputs button {
     /* float: right; */
     width: 5%;
     padding: 10px;
@@ -20,4 +33,19 @@ form.inputs input[type=text] {
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;
-  }
+}
+
+table {
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1%;
+    align-items: center;
+}
+
+td.editTitle {
+    text-align: left;
+    font-style: oblique;
+    font-weight: bold;
+    text-decoration: underline;
+}
