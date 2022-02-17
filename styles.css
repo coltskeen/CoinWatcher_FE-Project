@@ -19,7 +19,7 @@ body {
 form.inputs input[type=text] {
     padding: 10px;
     margin-top: .2%;
-    font-size: 17px;
+    font-size: 100%;
     border: 1px solid grey;
     width: 15%;
     /* height: 37px; */
@@ -34,7 +34,7 @@ form.inputs button {
     margin-right: .2%;
     background: #2196F3;
     color: white;
-    font-size: 17px;
+    font-size: 100%;
     border: 1px solid grey;
     border-left: none; /* Prevent double borders */
     cursor: pointer;

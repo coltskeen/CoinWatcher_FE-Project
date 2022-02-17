@@ -24,7 +24,9 @@ const currencyFormatter = new Intl.NumberFormat('en-US', {
 const ΔFormatter = new Intl.NumberFormat('en-US', { maximumSignificantDigits: 3 });
 
 //Search Funtion w/ Button EventListener
-searchButton.addEventListener("click", function search() {
+searchButton.addEventListener("click", search);
+
+function search() {
     let inputData = $searchInput.val();
 
     $.get(`https://api.coincap.io/v2/assets`, (data) => {
@@ -63,15 +65,16 @@ searchButton.addEventListener("click", function search() {
             } 
         } 
     })
-})
+}
 
-// $searchInput.on("keyup", function (e) {
-//     if (e.keyCode === 13) {
-//         // e.preventDefault();
-//         console.log("isthison?");
-//         // search();
-//     }   
-// })
+//Trying to add functionality when just enter is pressed...
+$searchInput.on("keyup", function (e) {
+    if (e.keyCode === 13) {
+        // e.preventDefault();
+        console.log("isthison?");
+        search();
+    }   
+})
     
     
     
