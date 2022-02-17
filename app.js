@@ -3,16 +3,6 @@ console.log("loaded");
 //Reference the html elements
 let $searchInput = $('#crypto');
 let searchButton = document.getElementById("submit");
-let $displayDiv = $("#dataCard");
-let $headerDiv = $("#coinHeader");
-let $h1 = $("#iconHeader");
-let $rankTitle = $("#rankTitle");
-let $rankData = $("#rankData");
-let $priceTitle = $("#priceTitle");
-let $priceData = $(".editPrice");
-let $ΔTitle = $("#ΔTitle");
-let $percentChangeData = $(".editPercent");
-let $infoBtn = $("#moreInfoBtn");
 
 //Number formatters with International API
 const currencyFormatter = new Intl.NumberFormat('en-US', {
@@ -28,6 +18,16 @@ searchButton.addEventListener("click", search);
 
 function search() {
     let inputData = $searchInput.val();
+    let $displayDiv = $("#dataCard");
+    let $headerDiv = $("#coinHeader");
+    let $h1 = $("#iconHeader");
+    let $rankTitle = $("#rankTitle");
+    let $rankData = $("#rankData");
+    let $priceTitle = $("#priceTitle");
+    let $priceData = $(".editPrice");
+    let $ΔTitle = $("#ΔTitle");
+    let $percentChangeData = $(".editPercent");
+    let $infoBtn = $("#moreInfoBtn");
 
     $.get(`https://api.coincap.io/v2/assets`, (data) => {
         console.log(data.data[0]);
