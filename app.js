@@ -4,6 +4,7 @@ console.log("loaded");
 let $searchInput = $('#crypto');
 let searchButton = document.getElementById("submit");
 
+
 //Number formatters with International API
 const currencyFormatter = new Intl.NumberFormat('en-US', {
     style: 'currency',
@@ -68,13 +69,14 @@ function search() {
 }
 
 //Trying to add functionality when just enter is pressed...
-$searchInput.on("keyup", function (e) {
-    if (e.keyCode === 13) {
-        // e.preventDefault();
+$searchInput.on("keypress", function (e) {
+    if (e.key === "Enter") {
+        e.preventDefault();
         console.log("isthison?");
         search();
     }   
 })
+
     
     
     

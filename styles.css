@@ -55,6 +55,10 @@ table {
     margin-right: auto;
     margin-bottom: 1%;
     align-items: center;
+    /* border-bottom: grey;
+    border-top: white;
+    border-left: white;
+    border-right: white; */
 }
 
 td.editTitle {
