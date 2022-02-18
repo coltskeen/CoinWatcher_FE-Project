@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link href="https://api.coincap.io/v2/assets" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
@@ -31,6 +31,12 @@
     </div>
     <div class="container">
         <div class="card-deck mb-3 text-center">
+          <div id="hideMe" class="card mb-4 shadow-sm">
+            <div class="card-header">
+            </div>
+            <div class="card-body">
+            </div>
+          </div>
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
                   <h4 id="coinHeader" class="my-0 font-weight-normal"></h4>
@@ -52,6 +58,12 @@
                     </tr>
                   </table>
                   <a id='moreInfoBtn'><button id='moreInfo' type='button' class='btn btn-lg btn-block btn-outline-primary'>More Info</button></a>
+                </div>
+              </div>
+              <div id="hideMe2" class="card mb-4 shadow-sm">
+                <div class="card-header">
+                </div>
+                <div class="card-body">
                 </div>
               </div>
         </div>
