@@ -30,6 +30,7 @@ function search() {
     let $percentChangeData = $(".editPercent");
     let $infoBtn = $("#moreInfoBtn");
 
+
     $.get(`https://api.coincap.io/v2/assets`, (data) => {
         console.log(data.data[0]);
         
