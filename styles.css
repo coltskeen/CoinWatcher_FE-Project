@@ -17,7 +17,8 @@ body {
 }
 
 #hideMe2 {
-    opacity: 0;
+    opacity: .9;
+    text-align: left;
 }
 
 .display-4, .lead {
@@ -55,10 +56,10 @@ table {
     margin-right: auto;
     margin-bottom: 1%;
     align-items: center;
-    /* border-bottom: grey;
-    border-top: white;
-    border-left: white;
-    border-right: white; */
+}
+
+td {
+    padding: 5px;
 }
 
 td.editTitle {
