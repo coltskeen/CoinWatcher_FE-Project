@@ -18,7 +18,7 @@ Project Objective: Write an application that accomplishes the minimum requiremen
 
 Project Description: Are you invested in Crypto? Do you find yourself going to look at the market price for your investments regularly, but just get tired of all the data noise on most exchanges and coin trackers? CoinWatch is a simple solution that reduces this noise and with one click gives shows you the three most important factors for your investment: asset rank, asset price (in USD), and the percent change over the last 24 Hrs. Of course, if you find that on that particular day you want to research beyond these three factors, there is a convient link to take you to deep dive to your hearts content. CoinWatch even offers you quick access to the world's best victory dance when you realize you just became a crypto-millionaire. #StayFreeMyFriends.
 
-CoinWatch: https://coin-watch.surge.sh
+CoinWatch: https://coin-watcher.surge.sh
 
 ### Further Information
 

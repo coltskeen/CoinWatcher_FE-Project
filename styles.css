@@ -12,9 +12,9 @@ body {
 
 
 
-#hideMe {
+/* #hideMe {
     opacity: 0;
-}
+} */
 
 #hideMe2 {
     opacity: .9;
@@ -56,6 +56,7 @@ table {
     margin-right: auto;
     margin-bottom: 1%;
     align-items: center;
+    border-color: black
 }
 
 td {
@@ -67,6 +68,10 @@ td.editTitle {
     /* font-style: oblique; */
     font-weight: bold;
     /* text-decoration: underline; */
+}
+
+table, tr, td {
+    border-bottom: 1px solid grey;
 }
 
 #help li{
