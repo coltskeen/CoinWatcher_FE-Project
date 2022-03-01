@@ -16,7 +16,7 @@ Project Objective: Write an application that accomplishes the minimum requiremen
 
 6. DEPLOY: Deploy to surge - https://surge.sh/ 
 
-Project Description: Are you invested in Crypto? Do you find yourself going to look at the market price for your investments regularly, but just get tired of all the data noise on most exchanges and coin trackers? CoinWatcher is a simple solution that reduces this noise and with one click gives shows you the six most important factors for your investment: asset rank and market cap, asset price (in USD) and volume(24Hr), the percent change over the last 24 Hrs and circulating supply. Of course, if you find that on that particular day you want to research beyond these six factors, there is a convient link to take you to deep dive to your hearts content. #StayFreeMyFriends.
+Project Description: Are you invested in Crypto? Do you find yourself going to look at the market price for your investments regularly but also getting tired of all the data noise on most exchanges and coin trackers? CoinWatcher is a simple solution that reduces this noise and with one click shows you the six most important factors for your investment: asset rank, market cap, price (in USD), volume, last 24 Hr change, and circulating supply. Of course, if you prefer to research beyond these six factors on a particular day, there is a convenient link to take you deep into the blockchain analysis. #StayFreeMyFriends.
 
 CoinWatcher: https://coin-watcher.surge.sh
 
