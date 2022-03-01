@@ -115,20 +115,13 @@ table, tr, td {
     font-size: 15px;
     margin: 0 auto;
     margin-bottom: 15px;
-    /* margin-left: 50%;
-    margin-right: 50%; */
 }
   
 .active, .collapsible:hover {
     background-color: #555;
 }
 
-/* #searchHelp.card.mb-4.shadow-sm {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 300px;
-} */
+
 #searchHelp {
     padding: 0 18px;
     display: none;
