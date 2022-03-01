@@ -10,16 +10,25 @@ body {
     opacity: .9;
 }
 
+.myContainer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
 
 
-/* #hideMe {
-    opacity: 0;
+/* #searchHelp.card.mb-4.shadow-sm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
 } */
 
-#hideMe2 {
-    opacity: .9;
-    text-align: left;
+#help {
+    padding: 0px 20px 0px 20px;
 }
+
 
 .display-4, .lead {
     color: whitesmoke;
@@ -36,7 +45,7 @@ form.inputs input[type=text] {
     background: #f1f1f1;
 }
 
-form.inputs button {
+button {
     /* float: right; */
     width: 70px;
     padding: 10px;
@@ -49,6 +58,14 @@ form.inputs button {
     border-left: none; /* Prevent double borders */
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #555;
+}
+
+
+
+
 
 table {
     padding: 0;
@@ -77,4 +94,47 @@ table, tr, td {
 #help li{
     text-align: left;
     /* list-style-type: square; */
+}
+
+.helpContainer {
+    display: block;
+    width: 100%;
+    /* margin: 0 auto; */
+}
+
+.collapsible {
+    display: block;
+    background-color: #2196F3;
+    color: white;
+    cursor: pointer;
+    width: 270px;
+    height: 50px;
+    border: 1px solid grey;
+    text-align: center;
+    outline: none;
+    font-size: 15px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+    /* margin-left: 50%;
+    margin-right: 50%; */
+}
+  
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+/* #searchHelp.card.mb-4.shadow-sm {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 300px;
+} */
+#searchHelp {
+    padding: 0 18px;
+    display: none;
+    width: 380px;
+    overflow: hidden;
+    background-color: #f1f1f1;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }

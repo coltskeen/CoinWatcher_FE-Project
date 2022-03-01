@@ -18,7 +18,7 @@
         <h5 class="my-0 mr-md-auto font-weight-normal">CoinWatcher</h5>
         <nav class="my-2 my-md-0 mr-md-3">
           <a class="p-2 text-dark" href="https://github.com/coltskeen/Front-End-Project-Crypto-Marketdata">GitHub</a>
-          <a class="btn btn-outline-primary" href="https://www.youtube.com/watch?v=9CJu43AvIds&t=0s">Victory Dance</a>
+          <a class="btn btn-outline-primary" href="mailto:coinwatcher75@gmail.com">Contact Us</a>
         </nav>
     </div>
     <div class="px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
@@ -29,44 +29,53 @@
             <button id="submit" type="button">Submit</button>
         </form>
     </div>
-    <div class="container">
+    <div class="myContainer">
         <div class="card-deck mb-3 text-center">
             <div class="card mb-4 shadow-sm">
                 <div class="card-header">
                   <h4 id="coinHeader" class="my-0 font-weight-normal">Searched Asset</h4>
                 </div>
                 <div id="dataCard" class="card-body">
-                  <img id="iconHeader" class="card-title pricing-card-title">
+                  <img id="iconHeader" class="card-title pricing-card-title" src="BitcoinImage.png">
                   <table class='h6'>
                     <tr>
                       <td id="rankTitle" class='editTitle'>Rank:</td>
                       <td id="rankData"> #1</td>
+                      <td id="marketCapTitle" class='editTitle'>Market Cap:</td>
+                      <td id="marketCapData"> $$$$$</td>
                     </tr>
                     <tr>
                       <td id="priceTitle" class='editTitle'>Price: </td>
                       <td class='editPrice'>$$$$$</td>
+                      <td id="volumeTitle" class='editTitle'>Volume(24Hr):</td>
+                      <td id="volumeData"> $$$$$</td>
                     </tr>
                     <tr>
-                      <td id="ΔTitle" class='editTitle'>24Hr (Δ): </td>
+                      <td id="ΔTitle" class='editTitle'>24Hr%: </td>
                       <td class='editPercent'> 1,000%</td>
+                      <td id="supplyTitle" class='editTitle'>Supply:</td>
+                      <td id="supplyData"> #####</td>
                     </tr>
                   </table>
                   <a id='moreInfoBtn'><button id='moreInfo' type='button' class='btn btn-lg btn-block btn-outline-primary'>More Info</button></a>
                 </div>
               </div>
-              <div id="hideMe2" class="card mb-4 shadow-sm">
-                <div class="card-header">
-                  <h4 id="coinHeader" class="my-0 font-weight-normal">Search Guidelines</h4>
-                </div>
-                <div id="help" class="card-body">
-                  <p>
-                    <li>Search top 100 assets by market cap.</li>
-                    <li>Use asset full name or abbreviation.</li>
-                    <li>Examples: "Bitcoin" / "bitcoin" / "BTC"</li>
-                  </p>
-                </div>
-              </div>
         </div>
+    </div>
+    <div class="helpContainer">
+      <button type="button" class="collapsible">Search Help</button>
+      <div id="searchHelp" class="card mb-4 shadow-sm">
+        <div class="card-header">
+          <h4 id="coinHeader" class="my-0 font-weight-normal">Search Guidelines</h4>
+        </div>
+        <div id="help" class="card-body">
+          <p>
+            <li>Search top 100 assets by market cap.</li>
+            <li>Use asset full name or abbreviation.</li>
+            <li>Examples: "Bitcoin" / "bitcoin" / "BTC"</li>
+          </p>
+        </div>
+      </div>
     </div>
 </body>
 </html>
