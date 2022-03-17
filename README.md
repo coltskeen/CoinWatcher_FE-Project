@@ -1,4 +1,4 @@
-<h1 align="center">Frontend Project: CoinWatch</h1>
+<h1 align="center">Frontend Project: CoinWatcher</h1>
 
 ![Image](CoinWatch.png)
 
